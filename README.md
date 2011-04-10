@@ -50,11 +50,12 @@ Estrutura do diretório
     enunciado do problema.
 
 * `generator/` --- Pasta que contém os geradores de casos de testes. 
-  * `generator.[rb,py,c,cpp]` --- O gerador será executado da pasta onde ele 
-    deve criar os testes, isto é, da pasta testes. O gerador **deve** criar 
-    uma pasta (os nomes das pastas são números sequênciais a partir de 1) para 
-    cada conjunto de teste; cada conjunto de teste é composto por várias 
-    instâncias. Cada instância é um par de arquivos `inX` e `outX`.
+  * `generator.[rb,py,c,cpp]` --- O gerador será executado da pasta onde 
+    ele deve criar os arquivos de **entrada**, isto é, da pasta testes.  
+    As saídas devem O gerador **deve** criar uma pasta (os nomes das 
+    pastas são números sequênciais a partir de 1) para cada conjunto de 
+    teste; cada conjunto de teste é composto por várias instâncias. Cada 
+    instância é um par de arquivos `inX` e `outX`.
     
     A pasta `0/` não pode ser alterada, pois nela colocaremos os casos que vão 
     estar no enunciado.
