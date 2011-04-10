@@ -9,10 +9,12 @@ Estrutura do diretório
       memory_limit: 256
       source:       'Olimpíada Brasileira de Informática > 2000'
 
-* `checkers/` --- Os scripts desta pasta devem receber dois parâmetros 
-  `FILE_PATH` e `TAG_PATH`, onde `FILE_PATH` é o caminho absoluto para 
-  o arquivo que estamos verificando e `TAG_PATH` é o caminho absoluto 
-  para o arquivo que contém uma tag indicando o tipo de teste.
+* `checkers/` --- Os scripts desta pasta que verificam a entrada devem 
+  receber dois parâmetros `INPUT_PATH` e `TAG_PATH`, onde `FILE_PATH` é 
+  o caminho absoluto para o arquivo que estamos verificando e `TAG_PATH` 
+  é o caminho absoluto para o arquivo que contém uma tag indicando o 
+  tipo de teste. Já os scripts que verificam a saída devem receber três 
+  parâmetros `INPUT_PATH`, `OUTPUT_PATH` e `TAG_PATH`.
   
   Suponha que seu problema possui uma divisão dos casos de teste. Para os
   casos `tests/1` e `tests/2` uma restrição é X, para os casos `tests/2`,
