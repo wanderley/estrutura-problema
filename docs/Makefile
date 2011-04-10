@@ -1,6 +1,6 @@
 all: enunciado.pdf descricao.pdf
 
-%.pdf: %.tex
+%.pdf: %.tex *.tex
 	echo $@
 	ln -fs $< corpo.tex
 	pdflatex -halt-on-error -interaction=nonstopmode cabecalho.tex \
